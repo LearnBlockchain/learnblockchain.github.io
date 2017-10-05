@@ -7,21 +7,28 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 <style type="text/css">
 .wrapper {
 margin: 2em;
   }
-h1 {}
-  .naslov-stranice {font-size: 3.5em;
+body {color: grey;}
+  .naslov-stranice {color:black;
+font-family: 'Montserrat', sans-serif;
+font-size: 4em;
   margin-bottom:50px;
     margin-top:20px;
   font-weight:bold;}
-  .naslov {font-weight:bold;
+.naslov, .trajanje, .kategorija, .govornik, .datum, .opis, .tags {font-family: 'Merriweather', serif;}
+  .naslov {  font-weight:bold;
   font-size: 1.25em;}
   .kategorija{font-weight:bold;}
-  .govornik {padding-top:10px;}
-  .opis {padding-top:5px;}
+  .govornik {
+    font-family: 'Merriweather', serif;
+    padding-top:10px;}
+.datum, .opis {padding-top:5px;}
   .tags {padding-top:5px;
   margin-bottom:40px;}
 
@@ -30,43 +37,62 @@ h1 {}
   <body>
 
 
-
-    <p class="naslov-stranice text-center">Learn Blockchain</p>
-
+<div class="naslov-stranice">
+    <p class="text-center">Learn Blockchain</p>
+</div>
 <div class="container">
-<div>
-    <div class="naslov"><a href="https://youtu.be/5UmO5UsKHdk" data-id="1">What is OmiseGo (OMG) in a Nutshell</a></div>
+
+  <div class="wrapper">
+    <div class="naslov">
+        <a data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+    What is Blockchain   <i class="fa fa-play" aria-hidden="true"></i></a>
+
+  <div class="collapse" id="collapse1">
+    <div class="well">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/93E_GzvpMA0" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div></div>
+  <div class="trajanje">14 minutes<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></div>
+  <div class="govornik"><span class="kategorija">Speaker: </span>Shai Rubin</div>
+  <div class="datum"><span class="kategorija">Date: </span>2016-06-08</div>
+  <div class="opis"><span class="kategorija">Description: </span></div>
+  <div class="tags"><span class="kategorija">Tags: </span>Blockchain</div>
+</div>
+
+
+
+<div class="wrapper">
+    <div class="naslov"><a data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">What is OmiseGo (OMG) in a Nutshell   <i class="fa fa-play" aria-hidden="true"></i></a>
+      <div class="collapse" id="collapse2">
+        <div class="well">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/5UmO5UsKHdk" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div></div>
     <div class="trajanje">8 minutes</div>
     <div class="govornik"></div>
-    <div class="datum"><span class="kategorija">Date: </span>2017-08-20</date>
+    <div class="datum"><span class="kategorija">Date: </span>2017-08-20</div>
     <div class="opis"><span class="kategorija">Description: </span>OmiseGo is a decentralized exchange and wallet blockchain focused on banking for the unbanked.</div>
-    <div class="tags"><span class="kategorija">Tags: </span>OmiseGo</div>
+    <div class="tags"><span class="kategorija">Tags: </span>OmiseGo OMG</div>
   </div>
 
 
-<div>
-    <div class="naslov"><a href="https://youtu.be/p1U1elc_K-E" data-id="2">0x (ZRX) - Fundamental Analysis</a></div>
+<div class="wrapper">
+    <div class="naslov"><a data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">0x (ZRX) - Fundamental Analysis   <i class="fa fa-play" aria-hidden="true"></i></a>
+      <div class="collapse" id="collapse3">
+        <div class="well">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/p1U1elc_K-E" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div></div>
     <div class="trajanje">9 minutes</div>
     <div class="govornik"></div>
-    <div class="datum"><span class="kategorija">Date: </span>2017-08-23</date>
-
-    <div class="tags"><span class="kategorija">Tags: </span>0x</div>
+    <div class="datum"><span class="kategorija">Date: </span>2017-08-23</div>
+    <div class="tags"><span class="kategorija">Tags: </span>0x ZRX</div>
   </div>
 
 </div>
-<div class="wrapper">
-  <div class="title">
-      <a data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
-  What is Blockchain
-</a>
 
-<div class="collapse" id="collapse1">
-  <div class="well">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/93E_GzvpMA0" frameborder="0" allowfullscreen></iframe>
-  </div>
-</div></div>
-<div class="speaker">Speaker: Shai Rubin</div>
-<div class="date">Date: 8. June 2016.</div></div>
+
+
 
 
     <!-- Optional JavaScript -->
